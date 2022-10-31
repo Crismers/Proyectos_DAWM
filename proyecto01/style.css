@@ -24,6 +24,18 @@ body
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 800px) {
+    .contenedor,
+    .derecha {
+      display: flex;
+    }
+
+    .contenedor {
+      flex-direction: column;
+    }
 }
 .contenedor .izquierda
 {
@@ -112,14 +124,63 @@ body
 {
     list-style: none;
 }
+.ContenedorRedes a
+{
+    margin: 21px;
+}
+.ContenedorRedes i
+{
 
+    color: white;
+}
+/*Contactame-Formulario*/
+.Contacto .form 
+{
+    width: 180px;
+    background: #373741;
+    margin-top: 30px;
+    border-radius: 17px;
+    font-family: "league spartan";
+    color: white;
+}
+.controls 
+{
+    width: 100%;
+    background: #373741;
+    padding: 6px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #fe9c8e;
+    font-size: 12px;
+}
 
+.form .boton
+{
+    width: 100%;
+    background: #fe9c8e;
+    border-radius: 15%;
+    border: none;
+    padding: 2px;
+    color: white;
+    margin: 10px 0;
+    font-size: 12px;
+
+}
 
 .contenedor .derecha
 {
     position: relative;
     background: #fffefe;
     padding: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Titulos*/
+.tituloderecha
+{
+    background: #fe9c8e;
 }
 /*Especialidades*/
 .ContenedorEspecialidades .especialidad img
@@ -127,8 +188,8 @@ body
     position: relative;
     top: 0;
     left: 0;
-    width: 30%;
-    height: 30%;
+    width: 27%;
+    height: 27%;
     object-fit: cover; 
 }
 /*Formacion*/
@@ -191,4 +252,15 @@ body
 {
     width: 50%;
     height: 50%;
+}
+/*video*/
+.video video
+{
+    width: 260px;
+}
+
+.ContenedorEspecialidades, .ContendorFormacion, .ContenedorHabilidades, .ContenedorLugares
+{
+    justify-content: center;
+    align-items: center;
 }
