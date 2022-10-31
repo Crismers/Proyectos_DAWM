@@ -158,7 +158,7 @@ body
 {
     width: 100%;
     background: #fe9c8e;
-    border-radius: 15%;
+    border-radius: 20px;
     border: none;
     padding: 2px;
     color: white;
@@ -181,8 +181,17 @@ body
 .tituloderecha
 {
     background: #fe9c8e;
+    border-radius: 20px;
+    text-align: center;
 }
 /*Especialidades*/
+.ContenedorEspecialidades .especialidad
+{
+    display: flex;
+    flex-direction: row;
+    margin: 6px 0;
+}
+
 .ContenedorEspecialidades .especialidad img
 {
     position: relative;
@@ -225,7 +234,10 @@ body
     font-size: 16px;
 }
 /*Habilidades*/
-
+.ContenedorHabilidades ul
+{
+    margin: 12px 0;
+}
 .ContenedorHabilidades .porcentaje
 {
     position: relative;
@@ -248,10 +260,19 @@ body
     list-style: none;
 }
 /*Ubicacion google maps*/
+
 .ContenedorLugares .google_maps iframe
 {
     width: 50%;
     height: 50%;
+    margin:12px auto;
+}
+#mapa
+{
+    outline: 2px;
+    margin-left: 146px;
+    margin-right: 200px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 /*video*/
 .video video
@@ -263,4 +284,18 @@ body
 {
     justify-content: center;
     align-items: center;
+}
+#video
+{
+    outline: 2px;
+    margin:12px auto;
+    margin-left: 179px;
+    margin-right: 200px; 
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.tituloderecha :hover, .tituloderecha :focus 
+{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  color: #444;
 }
