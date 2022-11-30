@@ -28,8 +28,8 @@ const cargarDatosTabla = async() => {
             for (element in data["data"]){
                 let info = data["data"][element];
                 datatable += `
-                    <tr>
-                        <td>${info["author"]}</td>
+                    <tr class="Contenido">
+                        <td class="autorH">${info["author"]}</td>
                         <td>${info["title"]}</td>
                         <td>${info["content"]}</td>
                         <td>${info["date"]}</td>
@@ -45,4 +45,5 @@ const cargarDatosTabla = async() => {
         console.log(error);
     }
 }
+
 cargarDatosTabla();
