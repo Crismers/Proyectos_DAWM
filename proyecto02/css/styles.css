@@ -11704,3 +11704,6 @@ body {
 .filtro{
   display: none;
 }
+.animate__animated.animate__bounce {
+  --animate-duration: 4s;
+}

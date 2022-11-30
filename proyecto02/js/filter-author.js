@@ -10,9 +10,6 @@ document.addEventListener("keyup",e=>{
             }else{
                 arti.classList.add("filtro")
             }
-            //arti.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-            //    ?arti.classList.remove("filtro")
-            //    :arti.classList.add("filtro")
         })
     }
 })
