@@ -11705,5 +11705,6 @@ body {
   display: none;
 }
 .animate__animated.animate__bounce {
-  --animate-duration: 4s;
+  --animate-duration: 10s;
 }
+
